@@ -1,0 +1,217 @@
+{
+  "translations": {
+    "site_name": "Chipta",
+    "first_slide": {
+      "welcome": "FIFA GA HUSH KELIBSIZ!",
+      "worldCup": "Futzal Bo'yicha Jahon Chempionati",
+      "explore": "Ko'proq izlang"
+    },
+    "slider_left": {
+      "uzb2024": "O'zbekiston 2024"
+    },
+    "upcoming_matches": {
+      "title": "O'yinlar",
+      "vs": "vs",
+      "more": "Ko'proq Kashf Eting"
+    },
+    "group_play": {
+      "title": "Guruh o'yinlari",
+      "group": "GURUH",
+      "mp": "O'O'",
+      "winner": "G'",
+      "lost": "Y",
+      "draw": "D",
+      "ga": "QG",
+      "gd": "GF",
+      "pts": "ball"
+    },
+    "get_ticket": {
+      "title": "Joyingiz uchun buyurtma qiling",
+      "addition": "FFWC 2024",
+      "tickets_now": "Chiptangizni Bu Yerdan Oling"
+    },
+    "about": {
+      "title": "Arenalar",
+      "check_maps": "Xaritadan ko'rish"
+    },
+    "participants": {
+      "title": "FFWC 2024 ishtirokchilari",
+      "ranking": "Futzal bo'yicha Jahon Reytingi",
+      "more_details": "Batafsil",
+      "more": "Ko'proq Kashf Eting"
+    },
+    "faq": {
+      "title": "Ko'p takrorlanadigan savollar"
+    },
+    "news": {
+      "title": "So'nggi yangiliklar",
+      "views": "Koʻrishlar",
+      "more": "Ko'proq Kashf Eting"
+    },
+    "footer": {
+      "copyright": "Copyright",
+      "reserved": "Barcha huquqlar himoyalangan"
+    },
+    "links": {
+      "design": "Dizayn",
+      "price": "Narxlar",
+      "login": "Kirish",
+      "home": "Bosh sahifa",
+      "faq": "Savollar",
+      "news": "Yangiliklar",
+      "refund_ticket": "Chiptani qaytarish"
+    },
+    "news_single": {
+      "back_button": "O'rindiqlarni tanlash sahifasiga qaytish",
+      "share": "Ijtimoiy tarmoqlarda ulashish",
+      "social": "Agar sizga maqola yoqqan bo'lsa yoki uni foydali deb topsangiz, uni ijtimoiy tarmoqlarda do'stlaringiz bilan ulashing."
+    },
+    "ticket_single": {
+      "back_button": "O'rindiqlarni tanlash sahifasiga qaytish",
+      "choose_section": "Bo'limni tanlash",
+      "choose_seats": "O'rindiqlarni tanlang",
+      "cart": "Bronlash sahifasi",
+      "vs": "vs",
+      "venue": "Manzillar:",
+      "date": "Sana:",
+      "time": "Vaqt:",
+      "section": "Bo'lim:",
+      "row": "Qator:",
+      "seat": "O'rindiq:",
+      "seats": "joy",
+      "rule": "Chiptalarni olish uchun boshqa bo'limni tanlashingiz mumkin",
+      "currency": "Valyuta",
+      "total": "JAMI:",
+      "remove_all": "Barchasini olib tashlash",
+      "max_seats": "Siz ko'pi bilan 5 ta o'rindiqni tanlashingiz mumkin"
+    },
+    "verificationn": {
+      "title": "Chiptalaringizni qayerga yuborishimiz istaysiz?",
+      "deliver": "Chiptalar quyida keltirilgan elektron pochta manziliga yuboriladi",
+      "email_address": "Elektron pochta manzili",
+      "email": "Elektron pochta",
+      "filled": "Ushbu maydon to'ldirilishi kerak",
+      "verification_code": "Tasdiqlash Kodi",
+      "incorrect": "Noto'g'ri tasdiqlash kodi",
+      "resend": "Biz taqdim etilgan elektron pochtaga tasdiqlash kodini yubordik. Siz uni qayta yuborishingiz mumkin",
+      "send": "Qayta yuborish",
+      "verify": "Elektron pochtangizni tasdiqlang",
+      "billing": "Hisob-kitobni olish uchun davom ettiring",
+      "verify_toast": "Elektron pochtadan kodni tasdiqlang"
+    },
+    "billing": {
+      "back_button": "O'rindiqlarni tanlash sahifasiga qaytish",
+      "billing_info": "To'lov ma'lumotlari",
+      "first_name": "Ism",
+      "last_name": "Familiya",
+      "middle_name": "Otasini ismi",
+      "address": "Manzil",
+      "birth": "Tug'ilgan sanasi",
+      "state": "Mamlakat",
+      "zip_code": "Pochta indeksi",
+      "city": "Shahar",
+      "filled": "Ushbu maydon to'ldirilishi kerak",
+      "purchase": "Sotib olish",
+      "create": "Buyurtma yarating",
+      "create_order_text": "Buyurtmangiz muvaffaqiyatli yaratildi",
+      "send_link": "To'lov havolasi elektron pochta manzilingizga yuborildi"
+    },
+    "congratulations": {
+      "title": "Tabriklaymiz",
+      "deliver_ticket": "Biz chiptalarni ko'rsatilgan elektron pochta manziliga yetkazdik.",
+      "go_main": "Asosiy sahifaga o'tish"
+    },
+    "payment": {
+      "title": "To'lov",
+      "text": "Chiptalarni sotib olishni davom ettirish uchun Davom etish tugmasini bosgandan so'ng siz uchinchi tomon tizimining to'lov oynalariga yo'naltirilasiz.",
+      "btn": "Yuborish"
+    },
+    "refund": {
+      "title": "Chipta pulini qaytarish talabi",
+      "accepted": "Sizning arizangiz qabul qilindi",
+      "note": "Sizning so'rovingizni 3-5 ish kuni ichida ko'rib chiqamiz. Qayta ishlashda kechikishlarga yo'l qo'ymaslik uchun barcha maydonlar to'g'ri to'ldirilganligiga ishonch hosil qiling.",
+      "note2": "Bizning operatorlarimiz ko'rib chiqadi va elektron pochtangizga xabar yuboradi",
+      "first_name": "Ism",
+      "enter_first_name": "Ismingizni kiriting",
+      "last_name": "Familiya",
+      "enter_last_name": "Familiyani kiriting",
+      "filled": "to'ldirilishi kerak",
+      "purchase": "Sotib olish sanasi",
+      "enter_ticket_number": "Chipta raqamini kiriting",
+      "ticket_number": "Chipta raqami",
+      "email": "E-pochta manzili" ,
+      "enter_phone": "Telefon raqamini kiriting",
+      "phone": "Telefon raqami",
+      "reason": "To'lovni qaytarish sababi",
+      "change_plans": "Rejalarni o'zgartirish",
+      "submit": "So‘rov yuborish",
+      "go_main": "Asosiyga o'ting",
+      "plans_changed": "Rejalar o'zgardi",
+      "other": "Boshqa"
+    },
+    "months": {
+      "january": "Yanvar",
+      "jan": "yan",
+      "february": "Fevral",
+      "feb": "fev",
+      "march": "Mart",
+      "mar": "mar",
+      "april": "Aprel",
+      "apr": "apr",
+      "may": "May",
+      "june": "Iyun",
+      "jun": "iyn",
+      "july": "Iyul",
+      "jul": "iyl",
+      "august": "Avgust",
+      "aug": "avg",
+      "september": "Sentabr",
+      "sep": "sen",
+      "october": "Oktabr",
+      "oct": "okt",
+      "november": "Noyabr",
+      "nov": "noy",
+      "december": "Dekabr",
+      "dec": "dek"
+    },
+    "weekdays": {
+      "monday": "Dushanba",
+      "mon": "du",
+      "tuesday": "Seshanba",
+      "tue": "se",
+      "wednesday": "Chorshanba",
+      "wed": "chor",
+      "thursday": "Payshanba",
+      "thu": "pay",
+      "friday": "Juma",
+      "fri": "ju",
+      "saturday": "Shanba",
+      "sat": "sha",
+      "sunday": "Yakshanba",
+      "sun": "yak",
+      "th": " -",
+      "st": " -",
+      "nd": " -",
+      "rd": " -"
+    },
+    "filter": {
+      "period": "Davrni tanlang",
+      "venue": "Joy:",
+      "all_venues": "Barcha joylar",
+      "match_type": "O'yin turi:",
+      "all_matches": "Barcha o'yinlar",
+      "group_a": "A guruhi",
+      "group_b": "B guruhi",
+      "group_c": "C guruhi",
+      "group_d": "D guruhi",
+      "group_e": "E guruhi",
+      "group_f": "F guruhi",
+      "round_16": "Nim-chorak final",
+      "quarter_finals": "Chorak final",
+      "semi_finals": "Yarim final",
+      "third-place": "Uchinchi o'rin",
+      "final": "Final"     
+    }
+    
+  }
+}

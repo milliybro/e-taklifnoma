@@ -1,0 +1,10 @@
+{
+  "translations": {
+    "site_name": "react_app",
+    "first_slide": {
+      "welcome": "ДОБРО ПОЖАЛОВАТЬ В ФИФА",
+      "worldCup": "Futsal World Cup",
+      "explore": "EXPLORE more"
+    }
+  }
+}

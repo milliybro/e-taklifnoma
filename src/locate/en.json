@@ -1,0 +1,216 @@
+{
+  "translations": {
+    "site_name": "Ticket",
+    "first_slide": {
+      "welcome": "WELCOME TO FIFA",
+      "worldCup": "Futsal World Cup",
+      "explore": "Explore more"
+    },
+    "slider_left": {
+      "uzb2024": "Uzbekistan 2024"
+    },
+    "upcoming_matches": {
+      "title": "matches",
+      "vs": "vs",
+      "more": "More Matches"
+    },
+    "group_play": {
+      "title": "Group play",
+      "group": "GROUP",
+      "mp": "MP",
+      "winner": "W",
+      "lost": "L",
+      "draw": "D",
+      "ga": "GA",
+      "gd": "GD",
+      "pts": "PTS"
+    },
+    "get_ticket": {
+      "title": "Place Your Order for ",
+      "addition": "FFWC 2024",
+      "tickets_now": "Get Your Ticket Here"
+    },
+    "about": {
+      "title": "Arenas",
+      "check_maps": "Check on Map"
+    },
+    "participants": {
+      "title": "FFWC 2024 participants",
+      "ranking": "Futsal World Ranking",
+      "more_details": "More Details",
+      "more": "Discover More"
+    },
+    "faq": {
+      "title": "Frequently asked questions"
+    },
+    "news": {
+      "title": "Latest News",
+      "views": "Views",
+      "more": "Discover More"
+    },
+    "footer": {
+      "copyright": "Copyright",
+      "reserved": "All rights reserved"
+    },
+    "links": {
+      "design": "Design",
+      "price": "Price",
+      "login": "Log In",
+      "home": "Home",
+      "faq": "FAQ",
+      "news": "News",
+      "refund_ticket": "Refund Ticket"
+    },
+    "news_single": {
+      "back_button": "Back to Choose Seats",
+      "share": "Share on social media",
+      "social": "If you liked the article or found it useful, share it with your friends on social media."
+    },
+    "ticket_single": {
+      "back_button": "Back to Choose Seats",
+      "choose_section": "Choose section",
+      "choose_seats": "Choose seats",
+      "cart": "Cart",
+      "vs": "vs",
+      "venue": "Venue:",
+      "date": "Date:",
+      "time": "Time:",
+      "section": "Section:",
+      "row": "Row:",
+      "seat": "Seat:",
+      "seats": "seats",
+      "rule": "You can select another section to get tickets",
+      "currency": "Currency",
+      "total": "TOTAL:",
+      "remove_all": "Remove all",
+      "max_seats": "You can choose a maximum of 5 seats"
+    },
+    "verificationn": {
+      "title": "Where should we send your tickets?",
+      "deliver": "Tickets will be delivered to the email address provided below",
+      "email_address": "Email address",
+      "email": "Email",
+      "filled": "This field needs to be filled",
+      "verification_code": "Verification Code",
+      "incorrect": "Incorrect verification code",
+      "resend": "We have sent a verification code to the provided email. You can resend in",
+      "send": "Send again",
+      "verify": "Verify your Email",
+      "billing": "Continue to Billing",
+      "verify_toast": "Verify code from email"
+    },
+    "billing": {
+      "back_button": "Back to Choose Seats",
+      "billing_info": "Billing information",
+      "first_name": "First Name",
+      "last_name": "Last Name",
+      "middle_name": "Middle Name",
+      "address": "Address",
+      "birth": "Birth date",
+      "state": "State",
+      "zip_code": "Zipcode",
+      "city": "City",
+      "filled": "This field needs to be filled",
+      "purchase": "Purchase",
+      "create": "Create order",
+      "create_order_text": "Your order was created successfully",
+      "send_link": "Payment link was sent to your email address"
+    },
+    "congratulations": {
+      "title": "Congratulations",
+      "deliver_ticket": "We have delivered tickets to the provided email address.",
+      "go_main": "Go to main page"
+    },
+    "payment": {
+      "title": "Payment",
+      "text": "To proceed the purchase of tickets, after clicking on the button Proceed, you will be directed to payment windows of third-party system.",
+      "btn": "Submit"
+    },
+    "refund": {
+      "title": "Ticket Refund Request",
+      "accepted": "Your application is accepted",
+      "note": "We will process your request within 3-5 business days. Ensure all fields are filled out correctly to avoid any delays in processing.",
+      "note2": "Our operators will review and send a message to your email",
+      "first_name": "First Name",
+      "enter_first_name": "Enter first name",
+      "last_name": "Last Name",
+      "enter_last_name": "Enter last name",
+      "filled": "must be filled",
+      "purchase": "Purchase Date",
+      "enter_ticket_number": "Enter ticket number",
+      "ticket_number": "Ticket number",
+      "email": "Email address" ,
+      "enter_phone": "Enter phone number",
+      "phone": "Phone number",
+      "reason": "Reason for Refund",
+      "change_plans": "Change of plans",
+      "submit": "Submit Request",
+      "go_main": "Go to main",
+      "plans_changed": "Plans have changed",
+      "other": "Other"
+    },
+    "months": {
+      "january": "January",
+      "jan": "jan",
+      "february": "February",
+      "feb": "feb",
+      "march": "March",
+      "mar": "mar",
+      "april": "April",
+      "apr": "apr",
+      "may": "May",
+      "june": "June",
+      "jun": "jun",
+      "july": "July",
+      "jul": "jul",
+      "august": "August",
+      "aug": "aug",
+      "september": "September",
+      "sep": "sep",
+      "october": "October",
+      "oct": "oct",
+      "november": "November",
+      "nov": "nov",
+      "december": "December",
+      "dec": "dec"
+    }, 
+    "weekdays": {
+      "monday": "Monday",
+      "mon": "mon",
+      "tuesday": "Tuesday",
+      "tue": "tue",
+      "wednesday": "Wednesday",
+      "wed": "wed",
+      "thursday": "Thursday",
+      "thu": "thu",
+      "friday": "Friday",
+      "fri": "fri",
+      "saturday": "Saturday",
+      "sat": "sat",
+      "sunday": "Sunday",
+      "sun": "sun",
+      "th": "th",
+      "st": "st",
+      "nd": "nd",
+      "rd": "rd"
+    },
+    "filter": {
+      "period": "Choose Period",
+      "venue": "Venue:",
+      "all_venues": "All Venues",
+      "match_type": "Match Type:",
+      "all_matches": "All Matches",
+      "group_a": "Group A",
+      "group_b": "Group B",
+      "group_c": "Group C",
+      "group_d": "Group D",
+      "group_e": "Group E",
+      "group_f": "Group F",
+      "round_16": "Round of 16",
+      "quarter_finals": "Quarter-finals",
+      "semi_finals": "Semi-finals",
+      "third-place": "Third-place play-off",
+      "final": "Final"     
+    }
+  }
+}
