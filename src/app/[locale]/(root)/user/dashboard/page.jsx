@@ -1,16 +1,12 @@
 import {
   DesktopOutlined,
   FileOutlined,
-  PieChartOutlined,
   TeamOutlined,
-  UploadOutlined,
   UserOutlined,
-  VideoCameraOutlined,
 } from "@ant-design/icons";
 import { Breadcrumb, Layout, Menu, theme } from "antd";
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import WeddingRing from "../../../../../svg/weddingRing";
 const { Header, Content, Footer, Sider } = Layout;
 function getItem(label, key, icon, children) {
   return {
@@ -25,7 +21,7 @@ const items = [
   getItem(
     "To'y",
     "1",
-    <img width={30} src="/images/wedding-rings-svgrepo-com.svg" />
+    <img width={30} src="/images/wedding-rings-svgrepo-com.svg" alt="" />
   ),
   getItem("Taklifnomalar", "2", <DesktopOutlined />),
   getItem("Mehmonlar", "3", <UserOutlined />),
