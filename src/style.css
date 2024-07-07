@@ -27,6 +27,13 @@
 }
 
 @font-face {
+  src: url("../public/fonts/webfonts/Italiana-Regular.ttf") format("truetype");
+  font-family: "Italiana", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
   src: url("../public/fonts/webfonts/OpenSans-Medium.ttf") format("truetype");
   font-family: "OpenSans";
   font-style: normal;
@@ -111,7 +118,7 @@
 * {
   box-sizing: border-box;
   user-select: text;
-  font-family: "OpenSans", sans-serif !important;
+  font-family: "Italiana", sans-serif !important;
 }
 
 html {
@@ -134,7 +141,7 @@ button,
 select,
 input,
 textarea {
-  font-family: "OpenSans", sans-serif !important;
+  font-family: "Italiana", sans-serif !important;
 }
 
 ::selection {
@@ -178,7 +185,7 @@ ul {
 input {
   outline: none !important;
   box-shadow: none !important;
-  font-family: "OpenSans", sans-serif;
+  font-family: "Italiana", sans-serif;
 }
 
 input::-webkit-outer-spin-button,
@@ -870,4 +877,22 @@ input {
 
 .ant-modal-content {
   background-color: rgba(21, 85, 25, 0.3) !important;
+}
+
+.card {
+  width: 45ch;
+  height: 45ch;
+  background: grey;
+  border-radius: 5px;
+  background-image: url(https://drscdn.500px.org/photo/435236/q%3D80_m%3D1500/v2?webp=true&sig=67031bdff6f582f3e027311e2074be452203ab637c0bd21d89128844becf8e40);
+  background-size: cover;
+  background-position: center center;
+  box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.5s;
+  will-change: transform;
+  border: 15px solid white;
+}
+
+.card:hover {
+  box-shadow: 0px 30px 100px -10px rgba(0, 0, 0, 0.4);
 }

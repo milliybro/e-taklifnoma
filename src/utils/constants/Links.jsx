@@ -4,16 +4,12 @@ export const LinksData = () => {
   const { t } = useTranslation();
 
   return [
-     {
-      title: t("links.home"),
+    {
+      title: "Dizaynlar",
       link: "/#upcomingmatches",
     },
     {
-      title: t("links.design"),
-      link: "/#upcomingmatches",
-    },
-    {
-      title: t("links.price"),
+      title: "Narxlar",
       link: "/#upcomingmatches",
     },
     // {

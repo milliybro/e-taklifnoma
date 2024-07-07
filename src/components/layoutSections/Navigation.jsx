@@ -16,12 +16,12 @@ export const Menu = ({ show, open, setOpen }) => {
     <>
       <div
         className={`fixed ${open ? "opacity-100" : "opacity-0 left-[-280px]"} 
-      top-0 left-0 h-full z-999 bg-deepCove w-[280px] overflow-y-auto transition-all ease-in-out duration-500`}
+      top-0 left-0 h-full z-999 bg-[#fcfcfc] w-[280px] overflow-y-auto transition-all ease-in-out duration-500`}
       >
         <div className="py-[15px] px-5">
           <Link to="/" className="cursor-pointer">
             <img
-              src="/public/images/logo.png"
+              src="/images/logo.png"
               className="w-[148px] h-[60px]"
               alt=""
             />
@@ -86,7 +86,7 @@ const Navigation = () => {
     <>
       <section
         className={`fixed w-full z-999 duration-200 transition-all ease-in-out ${
-          show ? "shadow-gray-400 shadow-sm bg-[#ffffff80] " : ""
+          show ? "" : ""
         }`}
       >
         <div className="container text-black">
@@ -145,11 +145,11 @@ const Navigation = () => {
                   <div
                     onClick={() => setOpen(!open)}
                     className="flex lg:hidden relative overflow-hidden px-4 py-2.5 
-        transition-all ease-in-out duration-200 hover:border-transparent"
+        transition-all ease-in-out duration-200  border-black"
                   >
                     <img
                       src="/images/menu-line.svg"
-                      className="z-10 relative"
+                      className="w-[30px] z-10 relative"
                       alt=""
                     />
 

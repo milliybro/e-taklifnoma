@@ -1,4 +1,7 @@
+import FirstSlide from "../../../../components/FirstSlide";
+import Weddings from "../../../../components/Weddings";
 import Navigation from "../../../../components/layoutSections/Navigation";
+import Footer from './../../../../components/layoutSections/Footer';
 
 const Home = () => {
   // const [arenaData, setArenaData] = useState([]);
@@ -26,15 +29,10 @@ const Home = () => {
   return (
     <div>
       <Navigation />
-TEZ KUNDA
+      <FirstSlide />
+      <Weddings />
 
-      {/* <FirstSlide /> */}
-      {/* <FirstSlide2 /> */}
-      {/* <SliderLeft /> */}
-      {/* <UpcomingMatches arenaData={arenaData}/> */}
-      {/* <AboutFFWC2024 arenaData={arenaData} loading={loading} /> */}
-      {/* <FAQ /> */}
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 };
