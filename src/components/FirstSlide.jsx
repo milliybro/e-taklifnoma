@@ -13,7 +13,7 @@ const FirstSlide = () => {
     <div className="container pt-28">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div className="md:col-span-1 mt-20 flex flex-col md:items-start items-center md:justify-start justify-center">
-          <h1 className="w-[600px] text-center md:text-start text-[48px] text-hoverColor font-bold">
+          <h1 className="w-full md:w-[600px] text-center md:text-start text-[48px] text-hoverColor font-bold">
             Raqamli to'y taklifnomalari
           </h1>
           <h3 className="pb-3 md:text-start text-center text-xl max-w-[500px]">
