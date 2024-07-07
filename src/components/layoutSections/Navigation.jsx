@@ -144,8 +144,8 @@ const Navigation = () => {
                   </div>
                   <div
                     onClick={() => setOpen(!open)}
-                    className="flex lg:hidden relative overflow-hidden px-4 py-2.5 rounded-[100px] border 
-        border-black  transition-all ease-in-out duration-200 hover:border-transparent"
+                    className="flex lg:hidden relative overflow-hidden px-4 py-2.5 
+        transition-all ease-in-out duration-200 hover:border-transparent"
                   >
                     <img
                       src="/images/menu-line.svg"
@@ -153,7 +153,7 @@ const Navigation = () => {
                       alt=""
                     />
 
-                    <span className="absolute top-0 left-0 z-[1] w-full h-full backdrop-blur-lg bg-blue-500/10" />
+                    <span className="absolute top-0 left-0 z-[1] w-full h-full b" />
                   </div>
                 </div>
               </div>

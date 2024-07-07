@@ -26,7 +26,7 @@ const Home = () => {
   return (
     <div>
       <Navigation />
-
+TEZ KUNDA
 
       {/* <FirstSlide /> */}
       {/* <FirstSlide2 /> */}
