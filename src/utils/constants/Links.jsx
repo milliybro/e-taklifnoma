@@ -1,7 +1,7 @@
-import { useTranslation } from "react-i18next";
+// import { useTranslation } from "react-i18next";
 
 export const LinksData = () => {
-  const { t } = useTranslation();
+  // const { t } = useTranslation();
 
   return [
     {
