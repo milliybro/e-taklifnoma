@@ -7,7 +7,7 @@ const Latest = () => {
   return (
     <div className="container py-[60px]">
       <Title title="Oxirgi taklifnomalar" />
-      <div className='pt-[20px] grid grid-cols-3'>
+      <div className='pt-[20px] md:grid md:grid-cols-3'>
          <div className='border-slate-500 border-[1px] p-4'>
 
       <h3 className="text-2xl pb-3">Muhiddin Va Azizaning to'y taklifnomasi</h3>
