@@ -3,7 +3,7 @@ import { Carousel } from "antd";
 import FirstMain from "../invitation/main";
 import SecondData from "../invitation/datas";
 import GeoLocation from "../invitation/location";
-import Gift from "../invitation/gift";
+// import Gift from "../invitation/gift";
 
 
 const contentStyle = {
