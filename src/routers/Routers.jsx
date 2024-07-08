@@ -6,6 +6,7 @@ import NotFount from "../app/[locale]/(root)/page";
 import Login from "../app/[locale]/(root)/login/page";
 import InvitationSingle from "../app/[locale]/(root)/invitation/[slug]/page";
 import UserDashboard from "../app/[locale]/(root)/user/dashboard/page";
+import Muhiddin from "../components/important/Muhiddin&Aziza";
 
 const Routers = () => {
   return (
@@ -23,6 +24,8 @@ const Routers = () => {
 
           <Route path="/invitation/">
             <Route path=":slug" element={<InvitationSingle />} />
+            <Route path="muhiddin&aziza" element={<Muhiddin />} />
+
           </Route>
           <Route path="/user/dashboard" element={<UserDashboard />} />
         </Route>

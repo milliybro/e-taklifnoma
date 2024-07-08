@@ -11,7 +11,7 @@ const SecondData = () => {
       }}
     >
       <div className=" text-teal-900 font-semibold text-center text-base">
-        <h4 className="mb-4">Hurmatli <span className="names text-lg">Shohruh</span> !</h4>
+        <h4 className="mb-4">Hurmatli <span className="names text-lg">Mehmonlar</span> !</h4>
         <h5 className="">
           Biz sizni hayotimizdagi eng baxtiyor kun nikoh to'yimizga bag'ishlangan oqshomimizda ko'rishimizdan mamnun bo'lamiz. 
         </h5>

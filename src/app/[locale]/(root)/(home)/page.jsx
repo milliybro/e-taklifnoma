@@ -1,4 +1,5 @@
 import FirstSlide from "../../../../components/FirstSlide";
+import Latest from "../../../../components/Latest";
 import Weddings from "../../../../components/Weddings";
 import Navigation from "../../../../components/layoutSections/Navigation";
 import Footer from './../../../../components/layoutSections/Footer';
@@ -30,8 +31,8 @@ const Home = () => {
     <div>
       <Navigation />
       <FirstSlide />
+<Latest />
       <Weddings />
-
       <Footer />
     </div>
   );

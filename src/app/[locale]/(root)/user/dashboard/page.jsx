@@ -118,7 +118,7 @@ const UserDashboard = () => {
               textAlign: "center",
             }}
           >
-            Ant Design ©{new Date().getFullYear()} Created by Ant UED
+            E-TAKLIFNOMA ©{new Date().getFullYear()} Created by MilliyBro
           </Footer>
         </Layout>
       </Layout>
