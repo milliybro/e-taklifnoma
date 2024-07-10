@@ -4,6 +4,7 @@ import FirstMain from "../../../../../components/invitation/main";
 import SecondData from "../../../../../components/invitation/datas";
 import GeoLocation from "../../../../../components/invitation/location";
 import Gift from "../../../../../components/invitation/gift";
+import GT1 from "../../../../../components/invitation/goritontal/type1/Main";
 
 const contentStyle = {
   height: "100vh",
@@ -56,7 +57,7 @@ const InvitationSingle = () => {
         <Carousel autoplaySpeed={5000} arrows className="w-screen bg-slate-300">
           <div style={contentStyle}>
             <div className="flex justify-center items-center h-screen w-screen">
-              <FirstMain />
+              <GT1 />
             </div>
           </div>
           <div style={contentStyle}>

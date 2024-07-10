@@ -1,1 +1,2 @@
-export const API_URL = process.env.REACT_APP_API_BASE_URL;
+// api.js
+export const API_URL =  "https://api.e-taklifnoma.uz/api/v1/";

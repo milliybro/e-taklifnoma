@@ -1,67 +1,63 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Axios from "../../../../utils/httpClient";
-import { setToken } from "../../../../utils/tokenStorge";
 import ButtonMain from "../../../../components/ui/ButtonMain";
 import Navigation from "../../../../components/layoutSections/Navigation";
 import toastUi from "../../../../components/utilsSection/toastUi";
+import { setToken } from "../../../../utils/tokenStorge";
+import ReactInputMask from "react-input-mask";
 
 const Login = () => {
   const [obj, setObj] = useState({});
   const [error, setError] = useState({});
+  const [phoneNumber, setPhoneNumber] = useState('');
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
 
-  const LoginForm = (e) => {
+  const LoginForm = async (e) => {
     e.preventDefault();
 
     let t = true,
       err = {};
 
-    if (!obj?.username) {
+    if (!obj?.phone) {
       t = false;
-      err = { ...err, username: true };
+      err = { ...err, phone: true };
     }
-    if (!obj?.password) {
-      t = false;
-      err = { ...err, password: true };
-    }
+    // if (!obj?.password) {
+    //   t = false;
+    //   err = { ...err, password: true };
+    // }
 
     if (t) {
       setLoading(true);
-      Axios()
-        .post("/account/login/", obj)
-        .then((res) => {
-          toastUi.success("Успешно сохранено");
-          navigate("/invitation/matches");
-          localStorage.setItem("username", res?.data?.user?.username);
-          setToken(res?.data?.access);
-        })
-        .catch((err) => {
-          toastUi.error(err?.response?.data?.detail);
-        })
-        .finally(() => {
-          setLoading(false);
-        });
+      try {
+        const res = await Axios().post("/login", obj);
+        toastUi.success("Успешно сохранено");
+        navigate("/user/dashboard");
+        localStorage.setItem("phone", res?.data?.user?.phone);
+        setToken(res?.data?.access);
+      } catch (err) {
+        toastUi.error(err?.response?.data?.detail);
+      } finally {
+        setLoading(false);
+      }
     } else {
       setError(err);
     }
-    navigate("/user/dashboard")
   };
 
   const HandleChange = (e) => {
-    setObj({ ...obj, [e?.target?.name]: e?.target?.value });
+    setObj({ ...obj, [e.target.name]: e.target.value });
     setError({ ...error, [e.target.name]: false });
   };
 
   useEffect(() => {
-    navigate("/login");
-
-    //   if (localStorage.getItem("token")) {
-    //     navigate("/invitation/matches");
-    //  } else {
-    //    navigate("/login");
-    //  }
+    if (localStorage.getItem("token")) {
+      navigate("/user/dashboard");
+    } else {
+      navigate("/login");
+    }
   }, [navigate]);
 
   return (
@@ -93,26 +89,23 @@ const Login = () => {
               </p>
             </div>
             <div className="relative w-full mt-4">
-              <input
-                name="username"
-                onChange={HandleChange}
-                value={obj?.username || ""}
-                type="text"
-                placeholder="Login"
-                className={`pl-[53px] pr-[27px] py-[16px] w-full bg-transparent border-0 text-base text-black font-normal ${
-                  error?.username === true
-                    ? "border-b border-red-500"
-                    : "border-b border-blueCyan"
-                }`}
-              />
+            <ReactInputMask
+                  mask="99 999 99 99"
+                  placeholder="Telefon raqam"
+                  name="phone"
+                  className="pl-[90px] py-4 text-[#2E2A3A] px-5 w-full bg-white border-[#474452] border-[1px] rounded-xl"
+                  value={phoneNumber}
+                  onChange={(e) => setPhoneNumber(e.target.value)}
+                  />
+                  <h4 className="absolute top-[17px] left-[50px] z-10 w-[20px] h-[20px]">+998</h4>
               <img
-                src={`/images/user-login.png`}
-                className="absolute top-[16px] left-[22px] z-10 w-[20px] h-[20px]"
+                src={`/images/uzbflag.png`}
+                className="absolute top-[18px] left-[22px] z-10 w-[20px] h-[20px]"
                 alt="userGray"
               />
             </div>
 
-            <div className="relative w-full mt-4">
+            {/* <div className="relative w-full mt-4">
               <input
                 name="password"
                 onChange={HandleChange}
@@ -120,9 +113,7 @@ const Login = () => {
                 type="password"
                 placeholder="Password"
                 className={`pl-[53px] pr-[27px] py-[16px] w-full bg-transparent border-0 text-base text-black font-normal ${
-                  error?.password === true
-                    ? "border-b border-red-500"
-                    : "border-b border-blueCyan"
+                  error?.password ? "border-b border-red-500" : "border-b border-blueCyan"
                 }`}
               />
               <img
@@ -130,7 +121,8 @@ const Login = () => {
                 className="absolute top-[16px] left-[22px] z-10 w-[20px] h-[20px]"
                 alt="lockGray"
               />
-            </div>
+            </div> */}
+
             <ButtonMain
               type="submit"
               loading={loading}
@@ -145,6 +137,7 @@ const Login = () => {
                 />
               }
             />
+
             <div className="flex flex-col justify-evenly w-full gap-3 mt-3">
               <a href="#a">
                 <button className="relative w-full p-3 flex flex-col items-center gap-3 bg-[#ffffff60] rounded-full">
