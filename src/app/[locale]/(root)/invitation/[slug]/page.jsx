@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import { Carousel } from "antd";
-import FirstMain from "../../../../../components/invitation/main";
+// import FirstMain from "../../../../../components/invitation/main";
 import SecondData from "../../../../../components/invitation/datas";
 import GeoLocation from "../../../../../components/invitation/location";
 import Gift from "../../../../../components/invitation/gift";

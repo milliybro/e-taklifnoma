@@ -51,7 +51,7 @@ const Login = () => {
     setObj({ ...obj, [e.target.name]: e.target.value });
     setError({ ...error, [e.target.name]: false });
   };
-
+console.log(HandleChange());
   useEffect(() => {
     if (localStorage.getItem("token")) {
       navigate("/user/dashboard");

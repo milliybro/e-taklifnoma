@@ -31,7 +31,7 @@ const Home = () => {
   return (
     <div className="">
       <div className="fixed bottom-8 right-8">
-          <img width={60} height={60} src="/images/wedding.png" />
+          <img width={60} height={60} src="/images/wedding.png" alt="" />
           {/* <ReactCurvedText
       width={70}
       height={70}
