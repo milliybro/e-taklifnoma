@@ -38,15 +38,7 @@ const Weddings = () => {
         <p className="text-center pt-5">Bizning dizaynlarimiz bilan to‘y muhitini maxsus tayyorlang.</p>
       </div>
       <Tabs centered defaultActiveKey="1" items={items} onChange={onChange} />
-      <Card backgroundImage={backgroundImageUrl1}>
-        Visol oqshomi{/* Text inside the first Card */}
-      </Card>
-      <Card backgroundImage={backgroundImageUrl2}>
-        Nahor oshi{/* Text inside the second Card */}
-      </Card>
-      <Card backgroundImage={backgroundImageUrl3}>
-        Qizlar bazmi{/* Text inside the second Card */}
-      </Card>
+
     </div>
   );
 };
