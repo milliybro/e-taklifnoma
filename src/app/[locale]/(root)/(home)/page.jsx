@@ -1,4 +1,5 @@
 // import ReactCurvedText from "react-curved-text";
+import Addition from "../../../../components/Addition";
 import FirstSlide from "../../../../components/FirstSlide";
 import Latest from "../../../../components/Latest";
 import Weddings from "../../../../components/Weddings";
@@ -32,21 +33,12 @@ const Home = () => {
     <div className="">
       <div className="fixed bottom-8 right-8">
           <img width={60} height={60} src="/images/wedding.png" alt="" />
-          {/* <ReactCurvedText
-      width={70}
-      height={70}
-      cx={190}
-      cy={120}
-      rx={100}
-      ry={100}
-      startOffset={100}
-      text="Taklifnoma yaratish"
-    />   */}
         </div>
       <Navigation />
       <FirstSlide />
+      <Addition />
       <Latest />
-      <Weddings />
+      <Weddings id="design" />
       <Footer />
     </div>
   );

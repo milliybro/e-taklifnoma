@@ -876,7 +876,7 @@ input {
 }
 
 .ant-modal-content {
-  background-color: rgba(21, 85, 25, 0.3) !important;
+  background-color: rgba(21, 85, 25, 0.8) !important;
 }
 
 .card {
@@ -940,4 +940,9 @@ input {
   to {
       transform: rotate(360deg);
   }
+}
+
+#name::placeholder,
+#wish::placeholder {
+  color: white !important;
 }

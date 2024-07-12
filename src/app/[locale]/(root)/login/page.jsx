@@ -14,6 +14,15 @@ const Login = () => {
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
 
+  const HandleChange = (e) => {
+    setObj({ ...obj, [e.target.name]: e.target.value });
+    setError({ ...error, [e.target.name]: false });
+  };
+
+  useEffect(() => {
+    setObj((prevObj) => ({ ...prevObj, phone: phoneNumber }));
+  }, [phoneNumber]);
+
   const LoginForm = async (e) => {
     e.preventDefault();
 
@@ -24,20 +33,19 @@ const Login = () => {
       t = false;
       err = { ...err, phone: true };
     }
-    // if (!obj?.password) {
-    //   t = false;
-    //   err = { ...err, password: true };
-    // }
 
     if (t) {
       setLoading(true);
       try {
+        console.log("Object to be sent:", obj); // Debugging log
         const res = await Axios().post("/login", obj);
-        toastUi.success("Успешно сохранено");
+        console.log("Response received:", res); // Debugging log
+        toastUi.success("Muvaffiqiyatli kirish");
         navigate("/user/dashboard");
         localStorage.setItem("phone", res?.data?.user?.phone);
         setToken(res?.data?.access);
       } catch (err) {
+        console.error("Error response:", err); // Debugging log
         toastUi.error(err?.response?.data?.detail);
       } finally {
         setLoading(false);
@@ -47,11 +55,6 @@ const Login = () => {
     }
   };
 
-  const HandleChange = (e) => {
-    setObj({ ...obj, [e.target.name]: e.target.value });
-    setError({ ...error, [e.target.name]: false });
-  };
-console.log(HandleChange());
   useEffect(() => {
     if (localStorage.getItem("token")) {
       navigate("/user/dashboard");
@@ -63,7 +66,6 @@ console.log(HandleChange());
   return (
     <>
       <Navigation />
-
       <div className="w-full min-h-[100vh] h-full flex items-center justify-center px-4 relative">
         <video
           autoPlay
@@ -89,40 +91,24 @@ console.log(HandleChange());
               </p>
             </div>
             <div className="relative w-full mt-4">
-            <ReactInputMask
-                  mask="99 999 99 99"
-                  placeholder="Telefon raqam"
-                  name="phone"
-                  className="pl-[90px] py-4 text-[#2E2A3A] px-5 w-full bg-white border-[#474452] border-[1px] rounded-xl"
-                  value={phoneNumber}
-                  onChange={(e) => setPhoneNumber(e.target.value)}
-                  />
-                  <h4 className="absolute top-[17px] left-[50px] z-10 w-[20px] h-[20px]">+998</h4>
+              <ReactInputMask
+                mask="99 999 99 99"
+                placeholder="Telefon raqam"
+                name="phone"
+                className="pl-[90px] py-4 text-[#2E2A3A] px-5 w-full bg-white border-[#474452] border-[1px] rounded-xl"
+                value={phoneNumber}
+                onChange={(e) => {
+                  setPhoneNumber(e.target.value);
+                  HandleChange(e);
+                }}
+              />
+              <h4 className="absolute top-[17px] left-[50px] z-10 w-[20px] h-[20px]">+998</h4>
               <img
                 src={`/images/uzbflag.png`}
                 className="absolute top-[18px] left-[22px] z-10 w-[20px] h-[20px]"
                 alt="userGray"
               />
             </div>
-
-            {/* <div className="relative w-full mt-4">
-              <input
-                name="password"
-                onChange={HandleChange}
-                value={obj?.password || ""}
-                type="password"
-                placeholder="Password"
-                className={`pl-[53px] pr-[27px] py-[16px] w-full bg-transparent border-0 text-base text-black font-normal ${
-                  error?.password ? "border-b border-red-500" : "border-b border-blueCyan"
-                }`}
-              />
-              <img
-                src={`/images/lock.png`}
-                className="absolute top-[16px] left-[22px] z-10 w-[20px] h-[20px]"
-                alt="lockGray"
-              />
-            </div> */}
-
             <ButtonMain
               type="submit"
               loading={loading}
@@ -137,7 +123,6 @@ console.log(HandleChange());
                 />
               }
             />
-
             <div className="flex flex-col justify-evenly w-full gap-3 mt-3">
               <a href="#a">
                 <button className="relative w-full p-3 flex flex-col items-center gap-3 bg-[#ffffff60] rounded-full">

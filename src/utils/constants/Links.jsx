@@ -6,12 +6,12 @@ export const LinksData = () => {
   return [
     {
       title: "Dizaynlar",
-      link: "/#upcomingmatches",
+      link: "/#design",
     },
-    {
-      title: "Narxlar",
-      link: "/#upcomingmatches",
-    },
+    // {
+    //   title: "Narxlar",
+    //   link: "/",
+    // },
     // {
     //   title: t("links.login"),
     //   link: "/#upcomingmatches",
