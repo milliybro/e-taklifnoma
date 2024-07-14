@@ -5,6 +5,7 @@ import SecondData from "../../../../../components/invitation/datas";
 import GeoLocation from "../../../../../components/invitation/location";
 import Gift from "../../../../../components/invitation/gift";
 import GT1 from "../../../../../components/invitation/goritontal/type1/Main";
+import Instagram from "../../../../../components/invitation/instagram";
 
 const contentStyle = {
   height: "100vh",
@@ -68,6 +69,11 @@ const InvitationSingle = () => {
           <div style={contentStyle}>
             <div className="flex justify-center items-center h-screen w-screen">
               <GeoLocation />
+            </div>
+          </div>
+          <div style={contentStyle}>
+            <div className="flex justify-center items-center h-screen w-screen">
+              <Instagram />
             </div>
           </div>
           <div style={contentStyle}>

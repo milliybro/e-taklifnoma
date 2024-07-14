@@ -14,7 +14,7 @@ const FirstSlide = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div className="md:col-span-1 mt-20 flex flex-col md:items-start items-center md:justify-start justify-center">
           <h1 className="w-full md:w-[600px] text-center md:text-start text-[48px] text-hoverColor font-bold">
-            Raqamli to'y va marosimlar uchun taklifnomalar
+            To'y va marosimlar uchun raqamli taklifnomalar
           </h1>
           <h3 className="pb-3 md:text-start text-center text-xl max-w-[500px]">
             Va shuningdek, Visol oqshomi, Nahor oshi, Qizlar bazmi va yubiley to'ylari uchun
@@ -22,7 +22,7 @@ const FirstSlide = () => {
           </h3>
           <h3 className="">Baxtli damlaringizda siz bilan birga!</h3>
           <Link
-            className="flex items-center gap-3 mt-6 text-2xl text-white cursor-pointer bg-hoverColor !py-5 px-6 rounded-2xl border-hoverColor hover:bg-white hover:text-hoverColor w-[300px]"
+            className="flex items-center gap-3 mt-6 text-2xl text-white cursor-pointer bg-hoverColor !py-5 px-6 rounded-2xl border-hoverColor hover:bg-white hover:text-hoverColor"
             to="/create-invitation"
           >
             <img
@@ -30,7 +30,7 @@ const FirstSlide = () => {
               src="/images/create-invitation.png"
               alt="Create Invitation"
             />
-            Taklifnoma yaratish
+            O'zingizning taklifnomangizni yarating
           </Link>
         </div>
         <div className="md:col-span-1 sm:grid sm:grid-cols-2 lg:gap-5 sm:gap-28 flex flex-col justify-center items-center gap-6">

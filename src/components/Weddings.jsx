@@ -32,7 +32,7 @@ const Weddings = () => {
     },
   ];
   return (
-    <div className="container ">
+    <div className="container py-[60px]">
       <div className="pb-8">
         <Title title="Mualliflik dizaynlari" />
         <p className="text-center pt-5">Bizning dizaynlarimiz bilan to‘y muhitini maxsus tayyorlang.</p>

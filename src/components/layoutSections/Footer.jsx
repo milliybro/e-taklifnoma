@@ -1,11 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
-import { useTranslation } from "react-i18next";
-import { LinksData } from "../../utils/constants/Links";
 
 const Footer = () => {
-  const links = LinksData();
-  const { t } = useTranslation();
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
@@ -24,38 +19,25 @@ const Footer = () => {
   }, []);
 
   return (
-    <section
-    >
-      <div className="container flex flex-col justify-end z-10">
+    <section className="bg-hoverColor">
+      <div className="container  z-10">
         <div
-          className={`w-full flex flex-col-reverse lg:flex-row justify-between items-center py-10 gap-8 mt-auto z-10 `}
+          className={`w-full flex flex-row lg:flex-row justify-between items-center py-10 gap-8 mt-auto z-10 `}
         >
-          <p className="  overflow-hidden px-4 py-2.5 rounded-[100px] text-secondLight border border-[#515665] hover:bg-blue transition-all ease-in-out duration-200 hover:border-transparent">
-            {t("footer.copyright")} © {new Date().getFullYear()}.{" "}
-            {t("footer.reserved")}
-          </p>
-          <ul className="flex md:flex-row flex-col gap-5 items-center text-secondLight text-base font-normal">
-            {links?.map((item, index) => (
-              <li key={index}>
-                <a href={item?.link}>
-                  <div className="relative overflow-hidden px-4 py-2.5 rounded-[100px] border border-[#515665] hover:bg-blue transition-all ease-in-out duration-200 hover:border-transparent">
-                    <span className="z-10 relative">{item?.title}</span>
-                    <span className="absolute top-0 left-0 z-[1] w-full h-full backdrop-blur-lg bg-blue-500/10" />
-                  </div>
-                </a>
-              </li>
-            ))}
-            <li>
-              <Link to="/refund">
-                <div className="relative overflow-hidden px-4 py-2.5 rounded-[100px] border border-[#515665] hover:bg-blue transition-all ease-in-out duration-200 hover:border-transparent">
-                  <span className="z-10 relative">
-                    Taklifnoma yaratish
-                  </span>
-                  <span className="absolute top-0 left-0 z-[1] w-full h-full backdrop-blur-lg bg-blue-500/10" />
-                </div>
-              </Link>
-            </li>
-          </ul>
+          <div className="flex gap-5">
+            <a target="_blank" rel="noreferrer" href="https://t.me/e_taklifnoma">
+              <img className="w-[40px]" src="/images/telegram.png" alt="" />
+            </a>
+            <a target="_blank" rel="noreferrer" href="https://www.instagram.com/e_taklifnoma">
+              <img className="w-[40px]" src="/images/instagram.png" alt="" />
+            </a>
+          </div>
+          <a target="_blank" rel="noreferrer" href="https://t.me/e_taklifnomaAdmin">
+            <button className="bg-white py-3 rounded-lg px-5 text-hoverColor border-hoverColor border-[1px] hover:border-white hover:bg-hoverColor hover:text-white">Biz bilan bog'lanish</button>
+          </a>
+        </div>
+        <div className="text-center text-white text-xl py-4">
+        ©2024 Mualliklif huquqi. Barcha huquqlar himoyalangan.
         </div>
       </div>
 

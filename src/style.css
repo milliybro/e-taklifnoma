@@ -896,10 +896,13 @@ input {
 .card:hover {
   box-shadow: 0px 30px 100px -10px rgba(0, 0, 0, 0.4);
 }
+
 .rotating-container {
   position: relative;
-  width: 120px; /* Adjust as needed */
-  height: 120px; /* Adjust as needed */
+  width: 120px;
+  /* Adjust as needed */
+  height: 120px;
+  /* Adjust as needed */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -935,14 +938,52 @@ input {
 
 @keyframes rotate {
   from {
-      transform: rotate(0deg);
+    transform: rotate(0deg);
   }
+
   to {
-      transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 
 #name::placeholder,
 #wish::placeholder {
   color: white !important;
+}
+
+.card-dashboard {
+  position: relative;
+  background: url('../public/images/slide/design1.jpg') no-repeat center center;
+  background-size: cover;
+  padding: 16px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+/* .card-dashboard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  backdrop-filter: blur(2px);
+  z-index: 0;
+}
+
+.card-dashboard > div, .card-dashboard > a {
+  position: relative;
+  z-index: 1;
+} */
+.insta-profile{
+
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+}
+.insta {
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

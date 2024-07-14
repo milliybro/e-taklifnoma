@@ -34,6 +34,7 @@ const Login = () => {
       err = { ...err, phone: true };
     }
 
+    navigate("/create-invitation")
     if (t) {
       setLoading(true);
       try {
@@ -41,7 +42,7 @@ const Login = () => {
         const res = await Axios().post("/login", obj);
         console.log("Response received:", res); // Debugging log
         toastUi.success("Muvaffiqiyatli kirish");
-        navigate("/user/dashboard");
+        // navigate("/user/dashboard");
         localStorage.setItem("phone", res?.data?.user?.phone);
         setToken(res?.data?.access);
       } catch (err) {

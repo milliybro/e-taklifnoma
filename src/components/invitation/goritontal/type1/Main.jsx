@@ -14,7 +14,7 @@ const GT1 = () => {
     <div
       className="relative flex flex-col justify-center h-screen w-screen  md:w-[500px] md:h-[700px] bg-[#ffffff] pt-6 py-6 px-6 pb-10 sm:px-[64px] sm:py-[30px] rounded-md shadow-lg"
       style={{
-        backgroundImage: "url('/images/design/design2,1.png')",
+        backgroundImage: "url('/images/slide/design1.jpg')",
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
@@ -33,12 +33,12 @@ const GT1 = () => {
         ))}
       </div>
       <div>
-        <h1 className="mt-14 flex text-[#636A41] flex-col names justify-center items-center text-[50px] leading-[60px] text-teal-800 !font-PlaywriteNZ font-light">
+        <h1 className="mt-14 flex  flex-col names justify-center items-center text-[50px] leading-[60px] text-teal-800 !font-PlaywriteNZ font-light">
           <span className="names !font-PlaywriteNZ">Muhiddin</span> &{" "}
           <span className="names">Aziza</span>
         </h1>
       </div>
-      <div className="mt-10 text-[#636A41] flex flex-col justify-center items-center text-teal-900 font-semibold text-base">
+      <div className="mt-10  flex flex-col justify-center items-center text-teal-900 font-semibold text-base">
         <div className="flex items-center">
           <div className="flex flex-col justify-center items-center">
             <span className="mx-4 w-36  flex justify-center">SHANBA</span>

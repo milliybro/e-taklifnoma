@@ -7,6 +7,8 @@ import Login from "../app/[locale]/(root)/login/page";
 import InvitationSingle from "../app/[locale]/(root)/invitation/[slug]/page";
 import UserDashboard from "../app/[locale]/(root)/user/dashboard/page";
 import Muhiddin from "../components/important/Muhiddin&Aziza";
+import CreateInvitation from "../app/[locale]/(root)/create/page";
+import AllDesign from "../app/[locale]/(root)/designs/page";
 
 const Routers = () => {
   return (
@@ -21,12 +23,13 @@ const Routers = () => {
         <Route path="/">
           <Route index element={<Home />} />
           <Route path="/login" element={<Login />} />
-
+          <Route path="/create-invitation" element={<CreateInvitation />} />
           <Route path="/invitation/">
             <Route path=":slug" element={<InvitationSingle />} />
             <Route path="muhiddin&aziza" element={<Muhiddin />} />
 
           </Route>
+          <Route path="/designs" element={<AllDesign />} />
           <Route path="/user/dashboard" element={<UserDashboard />} />
         </Route>
       </Route>
