@@ -10,29 +10,29 @@ const { Header, Content, Footer, Sider } = Layout;
 const menuItems = [
   {
     label: `To'y`,
-    key: '1',
+    key: "1",
     icon: <img width={30} src="/images/wedding-rings-svgrepo-com.svg" alt="" />,
   },
   {
-    label: 'Dizaynlar',
-    key: '2',
+    label: "Dizaynlar",
+    key: "2",
     icon: <img width={30} src="/images/design-black.png" alt="" />,
   },
   {
-    label: 'Fotoreportaj',
-    key: '6',
+    label: "Fotoreportaj",
+    key: "6",
     icon: <FileOutlined />,
   },
   {
-    label: 'Sozlamalar',
-    key: '7',
+    label: "Sozlamalar",
+    key: "7",
     icon: <FileOutlined />,
   },
 ];
 
 const UserDashboard = () => {
   const [collapsed, setCollapsed] = useState(false);
-  const [selectedKey, setSelectedKey] = useState('1');
+  const [selectedKey, setSelectedKey] = useState("1");
   const {
     token: { colorBgContainer, borderRadiusLG },
   } = theme.useToken();
@@ -52,20 +52,24 @@ const UserDashboard = () => {
     };
 
     handleResize(); // Initial check
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   const renderContent = () => {
     switch (selectedKey) {
-      case '1':
+      case "1":
         return (
           // Your content for 'To'y' key
           <div>
+            <div className="flex justify-between items-center ">
+
             <h2 className="flex items-center gap-3 text-3xl">
               <img className="w-[40px]" src="/images/glass.png" alt="wedding" />
               To'y
             </h2>
+            <Link to="/invitation/dsd" className="bg-hoverColor py-3 px-5 text-white text-xl rounded-[10px]">Taklifnomani ko'rish</Link>
+            </div>
             <div className="pt-5 grid lg:grid-cols-3 grid-cols-1 gap-8">
               <div className="bg-[#00000015] p-4 rounded-md">
                 <div className="flex items-center gap-4">
@@ -93,7 +97,9 @@ const UserDashboard = () => {
               <div className="bg-[#00000015] p-4 rounded-md flex flex-col justify-between">
                 <div className="flex items-center gap-4">
                   <img width={30} src="/images/wedding-invitation.png" alt="" />
-                  <h4 className="font-medium text-2xl">Raqamli taklifnomalar</h4>
+                  <h4 className="font-medium text-2xl">
+                    Raqamli taklifnomalar
+                  </h4>
                 </div>
                 <div className="mt-5 bg-hoverColor rounded-lg flex justify-center py-3 text-white">
                   <TelegramShareButton
@@ -114,9 +120,15 @@ const UserDashboard = () => {
                     <h4 className="font-medium text-2xl">Dizayn</h4>
                   </div>
                   <h4 className="text-xl mt-3">"Yoz sinfoniyasi"</h4>
-                  <h4 className="text-md">Taklifnomalar uchun yagona dizayn ishlating.</h4>
+                  <h4 className="text-md">
+                    Taklifnomalar uchun yagona dizayn ishlating.
+                  </h4>
                 </div>
-                <Link to="" className="mt-5 bg-hoverColor rounded-lg flex justify-center py-3 text-white">
+                <Link
+                  to=""
+                  onClick={() => setSelectedKey("2")}
+                  className="mt-5 bg-hoverColor rounded-lg flex justify-center py-3 text-white"
+                >
                   <div className="flex items-center gap-2">
                     <img width={30} src="/images/pencil.png" alt="" />
                     <h4 className="text-xl">Dizaynni o'zgartirish</h4>
@@ -126,17 +138,17 @@ const UserDashboard = () => {
             </div>
           </div>
         );
-      case '6':
+      case "6":
         return (
           // Your content for 'Fotoreportaj' key
           <div>Fotoreportaj content here</div>
         );
-      case '7':
+      case "7":
         return (
           // Your content for 'Sozlamalar' key
           <div>Sozlamalar content here</div>
         );
-      case '2':
+      case "2":
         return <AllDesign />;
       default:
         return null;
@@ -144,43 +156,90 @@ const UserDashboard = () => {
   };
 
   return (
-    <Layout style={{ backgroundColor: "#fcfcfc", minHeight: "100vh" }}>
-      <Sider
-        className="bg-white"
-        collapsible
-        collapsed={collapsed}
-        onCollapse={setCollapsed}
-        style={{ backgroundColor: "#fcfcfc", minHeight: "100vh" }}
-      >
-        <a href="/" className="flex justify-center">
-          <img width={120} src="/images/logo.png" alt="Logo" />
-        </a>
-        <Menu
-          theme="light"
-          defaultSelectedKeys={["1"]}
-          mode="inline"
-          items={menuItems}
-          onClick={handleMenuClick}
-        />
-      </Sider>
-      <Layout>
-        <Header className="flex justify-end mx-5" style={{ padding: 0, background: colorBgContainer }}>
-          Account
-        </Header>
-        <Content style={{ margin: "0 16px" }}>
-          <Breadcrumb style={{ margin: "16px 0" }}>
-            <Breadcrumb.Item>Foydalanuvchi</Breadcrumb.Item>
-            <Breadcrumb.Item>Yangi to'y</Breadcrumb.Item>
-          </Breadcrumb>
-          <div style={{ padding: 24, minHeight: 360, background: colorBgContainer, borderRadius: borderRadiusLG }}>
-            {renderContent()}
-          </div>
-        </Content>
-        <Footer style={{ textAlign: "center" }}>
-          E-TAKLIFNOMA ©{new Date().getFullYear()} Created by MilliyBro
-        </Footer>
-      </Layout>
-    </Layout>
+    <div>
+      <div className="hidden sm:block">
+        <Layout style={{ backgroundColor: "#fcfcfc", minHeight: "100vh" }}>
+          <Sider
+            className="bg-white"
+            collapsible
+            collapsed={collapsed}
+            onCollapse={setCollapsed}
+            style={{ backgroundColor: "#fcfcfc", minHeight: "100vh" }}
+          >
+            <a href="/" className="flex justify-center">
+              <img width={120} src="/images/logo.png" alt="Logo" />
+            </a>
+            <Menu
+              theme="light"
+              defaultSelectedKeys={["1"]}
+              mode="inline"
+              items={menuItems}
+              onClick={handleMenuClick}
+            />
+          </Sider>
+          <Layout>
+            <Header
+              className="flex justify-end mx-5"
+              style={{ padding: 0, background: colorBgContainer }}
+            >
+              Account
+            </Header>
+            <Content style={{ margin: "0 16px" }}>
+              <Breadcrumb style={{ margin: "16px 0" }}>
+                <Breadcrumb.Item>Foydalanuvchi</Breadcrumb.Item>
+                <Breadcrumb.Item>Yangi to'y</Breadcrumb.Item>
+              </Breadcrumb>
+              <div
+                style={{
+                  padding: 24,
+                  minHeight: 360,
+                  background: colorBgContainer,
+                  borderRadius: borderRadiusLG,
+                }}
+              >
+                {renderContent()}
+              </div>
+            </Content>
+            <Footer style={{ textAlign: "center" }}>
+              E-TAKLIFNOMA ©{new Date().getFullYear()} Created by MilliyBro
+            </Footer>
+          </Layout>
+        </Layout>
+      </div>
+      <div className="sm:hidden mobile">
+        <div
+          style={{
+            padding: 24,
+            minHeight: 360,
+            background: colorBgContainer,
+            borderRadius: borderRadiusLG,
+          }}
+        >
+          {renderContent()}
+        </div>
+        <div className="fixed bottom-0 w-full bg-hoverColor xs:px-3 py-2 grid grid-cols-5 justify-between z-20">
+          <a href className="flex flex-col items-center" onClick={() => setSelectedKey("1")}>
+            <img className="xs:w-[30px] w-[40px]" src="/images/ring-white.png" alt="" />
+            <h4 className="text-white text-xl hidden xs:block">To'y</h4>
+          </a>
+          <a href className="flex flex-col items-center" onClick={() => setSelectedKey("2")}>
+            <img className="xs:w-[30px] w-[40px]" src="/images/design-white.png" alt="" />
+            <h4 className="text-white text-xl hidden xs:block">Dizayn</h4>
+          </a>
+          <a href className="flex flex-col items-center" onClick={() => setSelectedKey("profile")}>
+            <img className="w-[50px]" src="/images/profile.png" alt="" />
+          </a>
+          <a href className="flex flex-col items-center" onClick={() => setSelectedKey("6")}>
+            <img className="xs:w-[30px] w-[40px]" src="/images/photo-white.png" alt="" />
+            <h4 className="text-white text-xl hidden xs:block">Foto</h4>
+          </a>
+          <a href className="flex flex-col items-center" onClick={() => setSelectedKey("7")}>
+            <img className="xs:w-[30px] w-[40px]" src="/images/settings-white.png" alt="" />
+            <h4 className="text-white text-xl hidden xs:block">Sozlamalar</h4>
+          </a>
+        </div>
+      </div>
+    </div>
   );
 };
 

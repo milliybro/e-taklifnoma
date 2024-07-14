@@ -18,7 +18,17 @@ const Gorizontal = () => {
         {
           src: "/images/design/design3.png",
           alt: "Lokatsiya",
-          label: "Lokatsiya",
+          label: "Tadbirlar",
+        },
+        {
+          src: "/images/design/design4.png",
+          alt: "Lokatsiya",
+          label: "Joylashuv",
+        },
+        {
+          src: "/images/design/design5.png",
+          alt: "Lokatsiya",
+          label: "Oxirgi varoq",
         },
       ],
       selectedImage: "/images/design/design1.png",
@@ -40,6 +50,16 @@ const Gorizontal = () => {
           src: "/images/design/design3.png",
           alt: "Lokatsiya",
           label: "Lokatsiya",
+        },
+        {
+          src: "/images/design/design4.png",
+          alt: "Lokatsiya",
+          label: "Joylashuv",
+        },
+        {
+          src: "/images/design/design5.png",
+          alt: "Lokatsiya",
+          label: "Oxirgi varoq",
         },
       ],
       selectedImage: "/images/design/design2,1.png",

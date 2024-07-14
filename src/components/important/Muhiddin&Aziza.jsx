@@ -3,8 +3,9 @@ import { Carousel } from "antd";
 import FirstMain from "../invitation/main";
 import SecondData from "../invitation/datas";
 import GeoLocation from "../invitation/location";
+import RealLocation from "../invitation/realLocation";
+import LastList from "../invitation/LastList";
 // import Gift from "../invitation/gift";
-
 
 const contentStyle = {
   height: "100vh",
@@ -14,15 +15,15 @@ const contentStyle = {
 };
 
 const Muhiddin = () => {
-//   const { t } = useTranslation();
-//   const { slug } = useParams();
-//   const navigate = useNavigate();
-//   const [loading, setLoading] = useState(true);
-//   const [newsData, setNewsData] = useState({});
+  //   const { t } = useTranslation();
+  //   const { slug } = useParams();
+  //   const navigate = useNavigate();
+  //   const [loading, setLoading] = useState(true);
+  //   const [newsData, setNewsData] = useState({});
   const audioRef = useRef(null);
 
   useEffect(() => {
-   //  getNewsData();
+    //  getNewsData();
 
     window.scrollTo({
       top: 0,
@@ -36,19 +37,19 @@ const Muhiddin = () => {
     }
   }, []);
 
-//   const getNewsData = (api_url = `news/news/${slug}/`) => {
-//    //  setLoading(true);
-//     Axios()
-//       .get(api_url)
-//       .then((r) => {
-//         console.log(r);
-//       //   setNewsData(r?.data || {});
-//       })
-//       .catch((e) => {})
-//       .finally(() => {
-//       //   setLoading(false);
-//       });
-//   };
+  //   const getNewsData = (api_url = `news/news/${slug}/`) => {
+  //    //  setLoading(true);
+  //     Axios()
+  //       .get(api_url)
+  //       .then((r) => {
+  //         console.log(r);
+  //       //   setNewsData(r?.data || {});
+  //       })
+  //       .catch((e) => {})
+  //       .finally(() => {
+  //       //   setLoading(false);
+  //       });
+  //   };
 
   return (
     <>
@@ -70,11 +71,16 @@ const Muhiddin = () => {
               <GeoLocation />
             </div>
           </div>
-          {/* <div style={contentStyle}>
+          <div style={contentStyle}>
             <div className="flex justify-center items-center h-screen w-screen">
-              <Gift />
+              <RealLocation />
             </div>
-          </div> */}
+          </div>
+          <div style={contentStyle}>
+            <div className="flex justify-center items-center h-screen w-screen">
+              <LastList />
+            </div>
+          </div>
         </Carousel>
       </div>
     </>

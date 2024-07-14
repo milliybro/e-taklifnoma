@@ -24,7 +24,7 @@ const CreateInvitation = () => {
   return (
     <div>
       <Navigation />
-      <div className=" container flex flex-col justify-center items-center py-10 md:max-w-[700px] sm:max-w-[500px] w-[400px]">
+      <div className=" container flex flex-col justify-center items-center py-10 md:max-w-[700px] sm:max-w-[500px] w-[300px]">
         <h1 className="pt-[50px] md:text-5xl text-3xl text-center pb-3">
           Nikoh to'yingizga taklifnoma yarating
         </h1>
@@ -59,7 +59,7 @@ const CreateInvitation = () => {
               },
             ]}
           >
-            <Input className="md:w-[700px] sm:w-[500px] w-[400px] rounded-[6px] p-3 " />
+            <Input className="md:w-[700px] sm:w-[500px] w-[300px] rounded-[6px] p-3 " />
             <p className="pt-2 text-[#000000A0]">masalan: MuhammadAli</p>
           </Form.Item>
           <Form.Item
@@ -73,7 +73,7 @@ const CreateInvitation = () => {
               },
             ]}
           >
-            <Input className="md:w-[700px] sm:w-[500px] w-[400px] rounded-[6px] p-3" />
+            <Input className="md:w-[700px] sm:w-[500px] w-[300px] rounded-[6px] p-3" />
             <p className="pt-2 text-[#000000A0]">masalan: Fotima</p>
           </Form.Item>
           <Form.Item
@@ -87,7 +87,7 @@ const CreateInvitation = () => {
             ]}
           >
             <DatePicker
-              className="md:w-[700px] sm:w-[500px] w-[400px] rounded-[6px] p-3 border-[#000000A0]"
+              className="md:w-[700px] sm:w-[500px] w-[300px] rounded-[6px] p-3 border-[#000000A0]"
               showTime
               format="YYYY-MM-DD HH:mm"
             />
@@ -105,7 +105,7 @@ const CreateInvitation = () => {
               },
             ]}
           >
-            <Input className="md:w-[700px] sm:w-[500px] w-[400px] rounded-[6px] p-3" />
+            <Input className="md:w-[700px] sm:w-[500px] w-[300px] rounded-[6px] p-3" />
             <p className="pt-2 text-[#000000A0]">
               masalan: "Tolliboy-Nigora" yoki "Rustamovlar xonadoni"
             </p>
@@ -120,7 +120,7 @@ const CreateInvitation = () => {
               },
             ]}
           >
-            <Input className="md:w-[700px] sm:w-[500px] w-[400px] rounded-[6px] p-3" />
+            <Input className="md:w-[700px] sm:w-[500px] w-[300px] rounded-[6px] p-3" />
             <p className="pt-2 text-[#000000A0]">
               masalan: "Oqsaroy" to'yxonasi
             </p>
@@ -135,14 +135,14 @@ const CreateInvitation = () => {
               },
             ]}
           >
-            <Input className="md:w-[700px] sm:w-[500px] w-[400px] rounded-[6px] p-3" />
+            <Input className="md:w-[700px] sm:w-[500px] w-[300px] rounded-[6px] p-3" />
             <p className="pt-2 text-[#000000A0]">
               masalan: Toshkent shahar, Yunusobod tumani
             </p>
           </Form.Item>
 
           <Form.Item label="To'yxonaning geoLokatsiya havolasini kiriting:">
-            <Space className="md:w-[700px] sm:w-[500px] w-[400px]">
+            <Space className="md:w-[700px] sm:w-[500px] w-[300px]">
               <Form.Item
                 name="url"
                 rules={[
@@ -164,7 +164,7 @@ const CreateInvitation = () => {
               >
                 <Input
                   placeholder=""
-                  className="md:w-[600px] sm:w-[400px] w-[320px] rounded-[6px] p-3"
+                  className="md:w-[600px] sm:w-[400px] w-[220px] rounded-[6px] p-3"
                 />
                 <p className="pt-2 text-[#000000A0]">
                   masalan: https://maps.app.goo.gl/XQvu16jxe98UdHXP6

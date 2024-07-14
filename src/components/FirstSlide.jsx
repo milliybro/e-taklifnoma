@@ -78,7 +78,29 @@ const FirstSlide = () => {
                 src="/images/design/design3.png"
                 alt="Lokatsiya"
               />
-              <h5 className="sm:flex hidden">Lokatsiya</h5>
+              <h5 className="sm:flex hidden">Tadbirlar</h5>
+            </button>
+            <button
+              className="flex items-center gap-4"
+              onClick={() => changeImage("/images/design/design4.png")}
+            >
+              <img
+                className="w-[35px] h-[35px] rounded-full"
+                src="/images/design/design4.png"
+                alt="Lokatsiya"
+              />
+              <h5 className="sm:flex hidden">Joylashuv</h5>
+            </button>
+            <button
+              className="flex items-center gap-4"
+              onClick={() => changeImage("/images/design/design5.png")}
+            >
+              <img
+                className="w-[35px] h-[35px] rounded-full"
+                src="/images/design/design5.png"
+                alt="Lokatsiya"
+              />
+              <h5 className="sm:flex hidden">Oxirgi varoq</h5>
             </button>
           </div>
         </div>
