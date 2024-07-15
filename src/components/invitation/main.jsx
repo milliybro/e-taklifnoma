@@ -3,7 +3,7 @@ import { useCountdown } from "../ui/useCountDown";
 import { ExpiredNotice, ShowCounter } from "../ui/CountDown";
 
 const FirstMain = () => {
-  const targetDate = "2024-08-03T17:00:00";
+  const targetDate = "2024-08-03T18:00:00";
   const [weeks, days, hours, minutes, seconds] = useCountdown(targetDate);
 
   if (weeks + days + hours + minutes + seconds <= 0) {
@@ -50,7 +50,7 @@ const FirstMain = () => {
             <span className="">2024</span>
           </div>
           <div className="flex flex-col justify-center items-center">
-            <span className="mx-4 w-36  flex justify-center">17:00</span>
+            <span className="mx-4 w-36  flex justify-center">18:00</span>
             <img className="mt-[-10px] w-28" src="/images/slide/text-decor.png" alt="" />
           </div>
         </div>

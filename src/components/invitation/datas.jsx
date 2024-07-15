@@ -34,10 +34,10 @@ const SecondData = () => {
         </h5>
       </div>
       <div className="text-center names text-xl text-teal-500 my-4">
-        2024-yil 03-avgust, soat 17:00
+        2024-yil 03-avgust, soat 18:00
       </div>
       <div className="text-teal-900 font-semibold text-center text-base">
-        Hurmat bilan: Turonovlar oilasi{" "}
+        Hurmat bilan: To'ychiyevlar oilasi{" "}
       </div>
       <div className="text-teal-900 font-semibold text-center text-base">
         Manzil: "To'xta bobo" restorani, H2PH+8Q6, Samarkand, Samarqand Region
