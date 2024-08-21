@@ -1,6 +1,6 @@
 import React from "react";
 import Title from "./ui/Title";
-import { Button } from "antd";
+// import { Button } from "antd";
 
 const Invitations = () => {
   return (
