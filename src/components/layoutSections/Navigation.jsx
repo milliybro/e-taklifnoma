@@ -32,7 +32,7 @@ export const Menu = ({ show, open, setOpen }) => {
             <li key={index} className=" w-full" onClick={() => setOpen(!open)}>
               <HashLink to={item?.link} className="w-full">
                 <div className="relative overflow-hidden w-full px-4 py-2.5 border-t border-[#515665] hover:bg-blue transition-all ease-in-out duration-200 hover:border-transparent">
-                  <span className="z-10 relative text-base">{item?.title}</span>
+                  <span className="z-10 relative text-base names">{item?.title}</span>
                 </div>
               </HashLink>
             </li>
@@ -44,7 +44,7 @@ export const Menu = ({ show, open, setOpen }) => {
             >
               <div className="flex items-center gap-1 relative px-4 py-2.5  hover:text-white   bg-hoverColor rounded-xl hover:rounded-none transition-all ease-in-out duration-200">
                 <img width={24} src="/images/user.png" alt="user-icon" />
-                <span className="z-10 transition-all ease-in-out duration-200 relative text-white  bg-transparent">
+                <span className="z-10 transition-all names ease-in-out duration-200 relative text-white  bg-transparent">
                   Login
                 </span>
               </div>
@@ -113,7 +113,7 @@ const Navigation = () => {
                     <li key={index} className="">
                       <HashLink to={item?.link} className="">
                         <div className="relative px-4 py-2.5 bg-transparent hover:text-white transition-all ease-in-out duration-200 hover:border-transparent">
-                          <span className="z-10 relative text-black hover:text-hoverColor bg-transparent">
+                          <span className="z-10 relative names text-black hover:text-hoverColor bg-transparent">
                             {item?.title}
                           </span>
                         </div>
@@ -131,7 +131,7 @@ const Navigation = () => {
                           src="/images/user.png"
                           alt="user-icon"
                         />
-                        <span className="z-10 transition-all ease-in-out duration-200 relative text-white  bg-transparent">
+                        <span className="z-10 names gap-[10px] transition-all ease-in-out duration-200 relative text-white  bg-transparent">
                           {t("links.login")}
                         </span>
                       </div>

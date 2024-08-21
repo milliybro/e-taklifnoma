@@ -5,12 +5,17 @@ import ButtonMain from "../../../../components/ui/ButtonMain";
 import Navigation from "../../../../components/layoutSections/Navigation";
 import toastUi from "../../../../components/utilsSection/toastUi";
 import { setToken } from "../../../../utils/tokenStorge";
-import ReactInputMask from "react-input-mask";
+import { Input, Typography } from "antd";
+import type { GetProps } from "antd";
+
+type OTPProps = GetProps<typeof Input.OTP>;
+
+const { Title } = Typography;
 
 const Login = () => {
   const [obj, setObj] = useState({});
   const [error, setError] = useState({});
-  const [phoneNumber, setPhoneNumber] = useState('');
+  const [phoneNumber, setPhoneNumber] = useState("");
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
 
@@ -34,7 +39,7 @@ const Login = () => {
       err = { ...err, phone: true };
     }
 
-    navigate("/create-invitation")
+    navigate("/create-invitation");
     if (t) {
       setLoading(true);
       try {
@@ -64,89 +69,39 @@ const Login = () => {
     }
   }, [navigate]);
 
+  const onChange: OTPProps["onChange"] = (e) => {
+    // const value = e.target.value.replace(/\D/g, '');
+    // setObj({ ...obj, otp: value });
+  };
+
+  const sharedProps: OTPProps = {
+    onChange,
+    formatter: (str) => str.toUpperCase(),
+    maxLength: 6,
+    className: "custom-otp-input",
+    value: obj.otp,
+  };
+
   return (
     <>
       <Navigation />
       <div className="w-full min-h-[100vh] h-full flex items-center justify-center px-4 relative">
-        <video
-          autoPlay
-          loop
-          muted
-          className="absolute top-[-160px] left-0 w-full h-[140%] object-cover z-[-1]"
-        >
-          <source src="/images/background.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
         <div className="w-full sm:w-auto">
           <form
             onSubmit={LoginForm}
-            className="bg-[#ffffff99] pt-6 py-6 px-6 pb-10 sm:px-[64px] sm:py-[30px] rounded-md shadow-lg mt-10"
+            className="bg-[#ffffff99] pt-6 py-6 px-6 pb-10 sm:px-[64px] sm:py-[30px] rounded-md mt-10"
           >
             <div className="flex flex-col items-center">
               <img src="/images/logo.png" className="w-28" alt="logo" />
               <p className="font-semibold text-2xl text-black text-center mt-3">
-                Xush kelibsiz
+                Kodni Kiriting
               </p>
               <p className="font-normal text-base text-black text-center mt-3">
-                Sizning to'yingiz bilan bir xil uslubda!
+                @e_taklifnomaBot telegram botiga kiring va 1 daqiqalik
+                kodingizni oling.
               </p>
-            </div>
-            <div className="relative w-full mt-4">
-              <ReactInputMask
-                mask="99 999 99 99"
-                placeholder="Telefon raqam"
-                name="phone"
-                className="pl-[90px] py-4 text-[#2E2A3A] px-5 w-full bg-white border-[#474452] border-[1px] rounded-xl"
-                value={phoneNumber}
-                onChange={(e) => {
-                  setPhoneNumber(e.target.value);
-                  HandleChange(e);
-                }}
-              />
-              <h4 className="absolute top-[17px] left-[50px] z-10 w-[20px] h-[20px]">+998</h4>
-              <img
-                src={`/images/uzbflag.png`}
-                className="absolute top-[18px] left-[22px] z-10 w-[20px] h-[20px]"
-                alt="userGray"
-              />
-            </div>
-            <ButtonMain
-              type="submit"
-              loading={loading}
-              type_color="t_blur"
-              className="w-full mt-6 flex justify-center items-center group"
-              text="Kirish"
-              righticon={
-                <img
-                  src={`/images/right-arrow.png`}
-                  className="h-[18px] w-[18px] group-hover:translate-x-2 duration-300"
-                  alt="c"
-                />
-              }
-            />
-            <div className="flex flex-col justify-evenly w-full gap-3 mt-3">
-              <a href="#a">
-                <button className="relative w-full p-3 flex flex-col items-center gap-3 bg-[#ffffff60] rounded-full">
-                  <img
-                    width={34}
-                    src="/images/telegram.png"
-                    alt=""
-                    className="absolute top-[7px] left-[22px] z-10 h-[34px]"
-                  />
-                  <h2>Telegram bilan kirish</h2>
-                </button>
-              </a>
-              <a href="#a">
-                <button className="relative p-3 w-full flex flex-col items-center gap-3 bg-[#ffffff60] rounded-full">
-                  <img
-                    width={34}
-                    src="/images/google.png"
-                    alt="s"
-                    className="absolute top-[7px] left-[22px] z-10 h-[34px]"
-                  />
-                  Google bilan kirish
-                </button>
-              </a>
+              <Title level={5}>With Disabled</Title>
+              <Input.OTP {...sharedProps} />
             </div>
           </form>
         </div>

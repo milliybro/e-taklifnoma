@@ -5,6 +5,8 @@ import Latest from "../../../../components/Latest";
 import Weddings from "../../../../components/Weddings";
 import Navigation from "../../../../components/layoutSections/Navigation";
 import Footer from "./../../../../components/layoutSections/Footer";
+import SliderLeft from "./../../../../components/Slide";
+import Invitations from './../../../../components/shablon';
 
 const Home = () => {
   // const [arenaData, setArenaData] = useState([]);
@@ -31,13 +33,11 @@ const Home = () => {
 
   return (
     <div className="">
-      <div className="fixed bottom-8 right-8 z-20">
-          <img width={60} height={60} src="/images/wedding.png" alt="" />
-        </div>
       <Navigation />
       <FirstSlide />
       <Addition />
-      <Latest />
+      <SliderLeft />
+      <Invitations />
       <Weddings id="design" />
       <Footer />
     </div>

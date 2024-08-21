@@ -26,6 +26,11 @@
   font-weight: 400;
 }
 
+.custom-otp-input {
+  border-radius: 12px;
+  color: #d4406d;
+}
+
 @font-face {
   src: url("../public/fonts/webfonts/Italiana-Regular.ttf") format("truetype");
   font-family: "Italiana", sans-serif;
@@ -186,6 +191,11 @@ input {
   outline: none !important;
   box-shadow: none !important;
   font-family: "Italiana", sans-serif;
+}
+
+.italiana {
+  font-family: "Italiana", sans-serif !important;
+
 }
 
 input::-webkit-outer-spin-button,
@@ -978,10 +988,11 @@ input {
   position: relative;
   z-index: 1;
 } */
-.insta-profile{
+.insta-profile {
 
   background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
 }
+
 .insta {
   background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
   -webkit-background-clip: text;
