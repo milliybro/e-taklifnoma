@@ -1,7 +1,6 @@
 // import ReactCurvedText from "react-curved-text";
 import Addition from "../../../../components/Addition";
 import FirstSlide from "../../../../components/FirstSlide";
-import Latest from "../../../../components/Latest";
 import Weddings from "../../../../components/Weddings";
 import Navigation from "../../../../components/layoutSections/Navigation";
 import Footer from "./../../../../components/layoutSections/Footer";

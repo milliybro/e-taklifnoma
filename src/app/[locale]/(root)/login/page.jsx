@@ -1,14 +1,12 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Axios from "../../../../utils/httpClient";
-import ButtonMain from "../../../../components/ui/ButtonMain";
+// import ButtonMain from "../../../../components/ui/ButtonMain";
 import Navigation from "../../../../components/layoutSections/Navigation";
 import toastUi from "../../../../components/utilsSection/toastUi";
 import { setToken } from "../../../../utils/tokenStorge";
 import { Input, Typography } from "antd";
-import type { GetProps } from "antd";
 
-type OTPProps = GetProps<typeof Input.OTP>;
 
 const { Title } = Typography;
 
@@ -19,10 +17,12 @@ const Login = () => {
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
 
-  const HandleChange = (e) => {
-    setObj({ ...obj, [e.target.name]: e.target.value });
-    setError({ ...error, [e.target.name]: false });
-  };
+  // const HandleChange = (e) => {
+  //   setObj({ ...obj, [e.target.name]: e.target.value });
+  //   setError({ ...error, [e.target.name]: false });
+  // };
+  console.log(error, setPhoneNumber, loading);
+  
 
   useEffect(() => {
     setObj((prevObj) => ({ ...prevObj, phone: phoneNumber }));
@@ -69,12 +69,12 @@ const Login = () => {
     }
   }, [navigate]);
 
-  const onChange: OTPProps["onChange"] = (e) => {
+  const onChange = (e) => {
     // const value = e.target.value.replace(/\D/g, '');
     // setObj({ ...obj, otp: value });
   };
 
-  const sharedProps: OTPProps = {
+  const sharedProps= {
     onChange,
     formatter: (str) => str.toUpperCase(),
     maxLength: 6,
