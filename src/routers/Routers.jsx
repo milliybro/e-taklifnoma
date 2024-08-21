@@ -9,6 +9,7 @@ import UserDashboard from "../app/[locale]/(root)/user/dashboard/page";
 import Muhiddin from "../components/important/Muhiddin&Aziza";
 import CreateInvitation from "../app/[locale]/(root)/create/page";
 import AllDesign from "../app/[locale]/(root)/designs/page";
+import Javlon from "../components/important/Javlon&Shaxnoza";
 
 const Routers = () => {
   return (
@@ -27,6 +28,7 @@ const Routers = () => {
           <Route path="/invitation/">
             <Route path=":slug" element={<InvitationSingle />} />
             <Route path="muhiddin&aziza" element={<Muhiddin />} />
+            <Route path="javlon&shaxnoza" element={<Javlon />} />
 
           </Route>
           <Route path="/designs" element={<AllDesign />} />

@@ -12,7 +12,7 @@ const ExpiredNotice = () => {
 const DateTimeDisplay = ({ value, type, isDanger }) => {
   return (
     <div
-      className={`countdown flex flex-col items-center text-teal-900 font-semibold text-lg gap-1 ${
+      className={`countdown flex flex-col items-center text-[#2e0108] font-semibold text-lg gap-1 ${
         isDanger ? "danger" : ""
       }`}
     >
