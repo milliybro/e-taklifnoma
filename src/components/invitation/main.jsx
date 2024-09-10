@@ -3,7 +3,7 @@ import { useCountdown } from "../ui/useCountDown";
 import { ExpiredNotice, ShowCounter } from "../ui/CountDown";
 
 const FirstMain = () => {
-  const targetDate = "2024-08-03T18:00:00";
+  const targetDate = "2024-09-22T15:00:00";
   const [weeks, days, hours, minutes, seconds] = useCountdown(targetDate);
 
   if (weeks + days + hours + minutes + seconds <= 0) {
@@ -34,23 +34,23 @@ const FirstMain = () => {
       </div>
       <div>
         <h1 className="mt-14 flex flex-col names justify-center items-center text-[50px] leading-[60px] text-teal-800 !font-PlaywriteNZ font-light">
-          <span className="names !font-PlaywriteNZ">Muhiddin</span> &{" "}
-          <span className="names">Aziza</span>
+          <span className="names !font-PlaywriteNZ">Oybek</span> &{" "}
+          <span className="names">Mahliyo</span>
         </h1>
       </div>
       <div className="mt-10 flex flex-col justify-center items-center text-teal-900 font-semibold text-base">
         <div className="flex items-center">
           <div className="flex flex-col justify-center items-center">
-            <span className="mx-4 w-36  flex justify-center">SHANBA</span>
+            <span className="mx-4 w-36  flex justify-center">YAKSHANBA</span>
             <img className="mt-[-10px] w-28" src="/images/slide/text-decor.png" alt="" />
           </div>
           <div className="flex flex-col items-center">
-            <span className="">AVGUST</span>
-            <span className="text-4xl">03</span>
+            <span className="">SENTABR</span>
+            <span className="text-4xl">22</span>
             <span className="">2024</span>
           </div>
           <div className="flex flex-col justify-center items-center">
-            <span className="mx-4 w-36  flex justify-center">18:00</span>
+            <span className="mx-4 w-36  flex justify-center">15:00</span>
             <img className="mt-[-10px] w-28" src="/images/slide/text-decor.png" alt="" />
           </div>
         </div>

@@ -10,6 +10,7 @@ import Muhiddin from "../components/important/Muhiddin&Aziza";
 import CreateInvitation from "../app/[locale]/(root)/create/page";
 import AllDesign from "../app/[locale]/(root)/designs/page";
 import Javlon from "../components/important/Javlon&Shaxnoza";
+import Oybek from "../components/important/Oybek&Mahliyo";
 
 const Routers = () => {
   return (
@@ -29,6 +30,7 @@ const Routers = () => {
             <Route path=":slug" element={<InvitationSingle />} />
             <Route path="muhiddin&aziza" element={<Muhiddin />} />
             <Route path="javlon&shaxnoza" element={<Javlon />} />
+            <Route path="oybek&mahliyo" element={<Oybek />} />
 
           </Route>
           <Route path="/designs" element={<AllDesign />} />

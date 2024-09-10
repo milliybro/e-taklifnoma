@@ -21,7 +21,7 @@ const AnimationMain = () => {
         className="absolute inset-0 w-full h-full object-cover z-[0]"
         autoPlay
         loop
-        //   muted
+          muted
       >
         <source src="/images/animation1.mp4" type="video/mp4" />
       </video>

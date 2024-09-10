@@ -27,9 +27,9 @@ const GeoLocation = () => {
         <h4 className="names text-xl mb-4">Visol oqshomi</h4>
         <hr className="h-px my-8 bg-teal-600 border-0 " />
         <div className="mt-4 flex flex-col gap-3">
-          <h5 className="text-lg">03-avgust, 2024-yil</h5>
-          <h5 className="text-lg">17:00</h5>
-          <h5 className="text-lg">H2PH+8Q6, Samarkand, Samarqand Region</h5>
+          <h5 className="text-lg">22-sentabr, 2024-yil</h5>
+          <h5 className="text-lg">15:00</h5>
+          <h5 className="text-lg">Urgut tumani Kenagas mahallasi "Murodkul bobo" tuyxonasi</h5>
         </div>
         <button
           onClick={showLoading}
@@ -42,7 +42,7 @@ const GeoLocation = () => {
       <Modal
       style={{width: "300px", height:" 300px"}}
         footer={
-          <a className="bg-teal-600 p-2 text-white " href="https://maps.app.goo.gl/MkDtbHSbfRRdFJo77">
+          <a className="bg-teal-600 p-2 text-white " href="https://maps.app.goo.gl/Px1Jks3EtvC11DvGA">
             Google xaritada ko'rish
           </a>
         }
@@ -51,7 +51,7 @@ const GeoLocation = () => {
         onCancel={() => setOpen(false)}
       >
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2922.7238391775118!2d67.02697663716114!3d39.58517867524288!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f4d2158835fc96f%3A0x78ac586e41cf0539!2sTo&#39;xta%20bobo!5e1!3m2!1sen!2s!4v1719237208071!5m2!1sen!2s"
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11708.448357667625!2d67.0872241!3d39.4810226!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f4cddaa6d2c987f%3A0x25d7ad1e28d006e4!2s%22Toshkent%22%20toyxona!5e1!3m2!1sen!2s!4v1725946233199!5m2!1sen!2s"
           width="100%"
           height="300px"
           style={{ border: 0 }}

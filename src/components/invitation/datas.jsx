@@ -34,13 +34,13 @@ const SecondData = () => {
         </h5>
       </div>
       <div className="text-center names text-xl text-teal-500 my-4">
-        2024-yil 03-avgust, soat 18:00
+        2024-yil 22-sentabr, soat 15:00
       </div>
       <div className="text-teal-900 font-semibold text-center text-base">
-        Hurmat bilan: To'ychiyevlar oilasi{" "}
+        Hurmat bilan: Yuldosh Raxmonov va Toshev Shamshiddinlar oilasi{" "}
       </div>
       <div className="text-teal-900 font-semibold text-center text-base">
-        Manzil: "To'xta bobo" restorani, H2PH+8Q6, Samarkand, Samarqand Region
+        Manzil: Urgut tumani Kenagas mahallasi, "Murodkul bobo" tuyxonasi
       </div>
       <div className="flex justify-center">
         <button
@@ -51,7 +51,7 @@ const SecondData = () => {
         </button>
       </div>
       <div className="mt-3 text-teal-700 font-semibold text-center text-base">
-        Iltimos taklifnomani 23-iyulgacha tasdiqlang.
+        Iltimos taklifnomani 15-sentabrgacha tasdiqlang.
       </div>
       <Modal
         style={{ width: "300px", height: " 300px" }}
