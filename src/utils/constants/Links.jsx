@@ -8,18 +8,21 @@ export const LinksData = () => {
       title: "Dizaynlar",
       link: "/#design",
     },
-    // {
-    //   title: "Narxlar",
-    //   link: "/",
-    // },
-    // {
-    //   title: t("links.login"),
-    //   link: "/#upcomingmatches",
-    // },
-    // {
-    //   title: t("links.ffwc2024"),
-    //   link: "/#ffwc2024",
-    // },
-    
+    {
+      title: "Shablonlar",
+      link: "/templates",
+    },
+    {
+      title: "Narxlar",
+      link: "/prices",
+    },
+    {
+      title: "Biz haqimizda",
+      link: "/about",
+    },
+    {
+      title: "FAQ",
+      link: "/faq",
+    },
   ];
 };

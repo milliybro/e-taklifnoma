@@ -21,7 +21,7 @@ const AnimationMain = () => {
         className="absolute inset-0 w-full h-full object-cover z-[0]"
         autoPlay
         loop
-        //   muted
+        muted
       >
         <source src="/images/animation1.mp4" type="video/mp4" />
       </video>
@@ -53,10 +53,13 @@ const AnimationMain = () => {
             ))}
           </div>
 
-          <div data-aos="fade-right"
+          <div
+            data-aos="fade-right"
             data-aos-delay="500"
             data-aos-duration="1000"
-            data-aos-easing="ease-in-sine" className="mt-28">
+            data-aos-easing="ease-in-sine"
+            className="mt-28"
+          >
             <h1 className="mt-14 text-[#2e0108] relative z-10 flex flex-col names justify-center items-center text-[50px] leading-[60px] !font-PlaywriteNZ font-light">
               <span className="names !font-PlaywriteNZ text-[#2e0108]">
                 Javlon
@@ -65,9 +68,12 @@ const AnimationMain = () => {
             </h1>
           </div>
 
-          <div data-aos="fade-left"
+          <div
+            data-aos="fade-left"
             data-aos-delay="500"
-            data-aos-duration="1000" className="mt-10 relative z-10 flex flex-col justify-center items-center text-[#2e0108] font-semibold text-base">
+            data-aos-duration="1000"
+            className="mt-10 relative z-10 flex flex-col justify-center items-center text-[#2e0108] font-semibold text-base"
+          >
             <div className="flex items-center">
               <div className="flex flex-col justify-center items-center">
                 <span className="mx-4 w-36  flex justify-center">JUMA</span>
@@ -93,9 +99,12 @@ const AnimationMain = () => {
             </div>
           </div>
 
-          <div data-aos="zoom-in-down"
+          <div
+            data-aos="zoom-in-down"
             data-aos-delay="500"
-            data-aos-duration="1000" className="mt-5 relative z-10 text-[#2e0108]">
+            data-aos-duration="1000"
+            className="mt-5 relative z-10 text-[#2e0108]"
+          >
             <ShowCounter
               weeks={weeks}
               days={days}
@@ -104,9 +113,12 @@ const AnimationMain = () => {
               seconds={seconds}
             />
           </div>
-          <div data-aos="zoom-in-down"
+          <div
+            data-aos="zoom-in-down"
             data-aos-delay="500"
-            data-aos-duration="1000" className="-mt-8 mb-2">
+            data-aos-duration="1000"
+            className="-mt-8 mb-2"
+          >
             <h1 className="mt-14 relative z-10 flex flex-col names justify-center items-center text-[50px] leading-[60px] text-[#2e0108] !font-PlaywriteNZ font-light">
               <span className="names text-2xl !font-PlaywriteNZ">
                 "Oqsaroy"
